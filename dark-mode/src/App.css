@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* ให้หน้าเว็บสมส่วน ไม่มีการ scorll */
+}
+
+header, main {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  /* แยก keyword mode กับ switch อยู่คนละส่วนกัน ซ้าย ขวา */
+}
+
+header {
+  align-items: center;
+}
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+  font-size: 6rem;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+main img {
+  width: 50%;
+}
+
+header.dark {
+  background-color: #121213;
+  color: orange;
+}
+
+main.dark {
+  background: #121213;
+  color: white;
+}
+
+main.dark p {
+  color: orange;
+}
