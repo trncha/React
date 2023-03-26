@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    /* อ้างอิงของแต่ละ element ตามขนาดจริง */
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ย้ายทุกตัวมาอยู่ตรงกลาง */
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.money-img {
+    width: 220px;
+}
+
+.equal {
+    font-weight: bold;
+    /* ตัวหนา */
+    font-size: 40px;
+}
+
+.currency {
+    padding: 40px 0;
+    /* ระยะแต่ละ element */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* ทำให้ส่วนของ dropdown กับ input แยกเป็นคนละส่วน ซ้าย - ขวา */
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    /* พื้นที่ของ dropdown */
+    border: 1px solid #dedede;
+    /* ขอบของ text select */
+    font-size: 16px;
+    background: transparent;
+    /* พื้นหลัง transparent มีลักษณะโปร่ง */
+    appearance: none;
+    /* ซ้อนลูกศรลง ของ select dropdown */
+}
+
+.currency input {
+    border: 0;
+    /* ปิดเส้นขอบ */
+    background: transparent;
+    /* พื้นหลัง transparent มีลักษณะโปร่ง */
+    font-size: 30px;
+    text-align: right;
+}
+
+select:focus, input:focus {
+    outline: none;
+    /* ไม่ให้มีเส้นขอบตอน focus input */
+}

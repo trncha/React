@@ -1,0 +1,83 @@
+.nav-menu {
+    background: #121312;
+    width: 250px;
+    /* ความกว้าง */
+    height: 100vh;
+    /* ความสูงเต็มพื้นที่ */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* การย้ายเมนูออกไปจากหน้าจอ */
+    transition: 850ms;
+    /* เคลื่อนที่ action */
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.navbar {
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-toggle {
+    background: #121312;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-bar {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+svg {
+    color: white;
+}
+/* svg กำหนด icon */
+
+.nav-menu-item {
+    width: 100%;
+}
+
+.menu-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    /* ปิดจุดหน้า <li></li> */
+    height: 60px;
+}
+
+.menu-text a{
+    text-decoration: none;
+    /* เอาที่ขีดเส้นใต้ข้อความออก */
+    color: #fff;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+/* Link คือ html tag <a></a> */
+
+.menu-text a:hover{
+    background: orange;
+}
+/* hover คือการเอาเม้าส์ไปวาง */
+
+span {
+    margin-left: 16px;
+}
